@@ -1,0 +1,43 @@
+nav .brand-logo {
+	padding-left: 20px;
+}
+
+nav form {
+  height: 64px;
+  line-height: 64px;
+  width: auto;
+}
+
+.side-nav .userView {
+  padding: 32px 0 0;
+  margin-bottom: 0px;
+}
+
+
+.card .card-action i{
+  color: #fff;
+}
+
+.card .card-action i:hover {
+  color: #d50000;
+}
+
+@media only screen and (max-width: 992px)		/*Tablet/ipad Devices */
+{
+	nav.nav-extended .nav-content {
+		display: none;
+	}
+	nav .brand-logo {
+    left: 140px;
+	font-size: 1.5rem;
+    /*-webkit-transform: translateX(-50%);
+            transform: translateX(-50%);*/
+	}
+}
+@media only screen and (max-width: 600px)		/*Mobile devices */
+{
+	nav form {
+		display: none;
+	}
+	
+}
