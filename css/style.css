@@ -1,5 +1,5 @@
 nav .brand-logo {
-	padding-left: 20px;
+  padding-left: 20px;
 }
 
 nav form {
@@ -13,8 +13,7 @@ nav form {
   margin-bottom: 0px;
 }
 
-
-.card .card-action i{
+.card .card-action i {
   color: #fff;
 }
 
@@ -22,22 +21,26 @@ nav form {
   color: #d50000;
 }
 
-@media only screen and (max-width: 992px)		/*Tablet/ipad Devices */
-{
-	nav.nav-extended .nav-content {
-		display: none;
-	}
-	nav .brand-logo {
+@media only screen and (max-width: 992px)
+/*Tablet/ipad Devices */
+
+  {
+  nav.nav-extended .nav-content {
+    display: none;
+  }
+  nav .brand-logo {
     left: 140px;
-	font-size: 1.5rem;
+    font-size: 1.5rem;
     /*-webkit-transform: translateX(-50%);
             transform: translateX(-50%);*/
-	}
+  }
 }
-@media only screen and (max-width: 600px)		/*Mobile devices */
-{
-	nav form {
-		display: none;
-	}
-	
+
+@media only screen and (max-width: 600px)
+/*Mobile devices */
+
+  {
+  nav form {
+    display: none;
+  }
 }
