@@ -3,13 +3,20 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
+app.use(express.static('public'));
+app.use(express.static('node_modules'));
 
-app.use('/' , express.static(__dirname + '/'));		//Used to serve the current folder as /
+app.get('/', function(req, res, next) {
+  res.sendFile(__dirname + '/views/index.html');
+} );
 
-/*app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
-});*/
+app.get('/admin', function(req, res, next) {
+  res.sendFile(__dirname + '/views/admin.html');
+} );
 
+app.get('/create', function(req, res, next) {
+  res.sendFile(__dirname + '/views/create-card.html');
+} );
 
 io.on('connection', function(socket){
   console.log('a user connected');
