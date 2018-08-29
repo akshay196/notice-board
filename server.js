@@ -26,6 +26,8 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(8000, function(){
-  console.log('listening on *:8000');
+var server_port = process.env.PORT || 8000;
+
+http.listen(server_port, function(){
+  console.log('listening on *:%d', server_port);
 });
